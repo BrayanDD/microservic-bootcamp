@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class onclass {
+public class BootcampMicroservice {
 
 	public static void main(String[] args) {
-		SpringApplication.run(onclass.class, args);
+		SpringApplication.run(BootcampMicroservice.class, args);
 	}
 
 }

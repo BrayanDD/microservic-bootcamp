@@ -122,9 +122,9 @@ public class TechnologiesRestController {
     //////////////////////////////
 
     @PostMapping("/bootcamps")
-    public ResponseEntity<String> saveCapacity(@Valid @RequestBody BootcampRequest bootcampRequest){
+    public ResponseEntity<String> saveBootcamp(@Valid @RequestBody BootcampRequest bootcampRequest){
         Long createdBootcampId = bootcampServicePort.saveBootcamp(bootcampRequestMapper.toBootcamp(bootcampRequest));
-        return ResponseEntity.status(HttpStatus.CREATED).body("Id capacity is: " + createdBootcampId);
+        return ResponseEntity.status(HttpStatus.CREATED).body("Id bootcamp is: " + createdBootcampId);
 
     }
 
@@ -176,4 +176,5 @@ public class TechnologiesRestController {
         return ResponseEntity.ok(versionResponseMapper.toResponseList(versionPage));
     }
 
+    
 }
