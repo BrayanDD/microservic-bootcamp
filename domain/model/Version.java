@@ -4,16 +4,16 @@ import java.time.LocalDate;
 
 public class Version {
     private Long id;
-    private String version;
+    private String versionName;
     private Long idBootcamp;
     private String bootcampName;
     private LocalDate startDate;
     private LocalDate endDate;
     private Long maxCapacity; 
 
-    public Version(Long id, String version, Long idBootcamp, LocalDate startDate, LocalDate endDate, Long maxCapacity) {
+    public Version(Long id, String versionName, Long idBootcamp, LocalDate startDate, LocalDate endDate, Long maxCapacity) {
         this.id = id;
-        this.version = version;
+        this.versionName = versionName;
         this.idBootcamp = idBootcamp;
         this.startDate = startDate;
         this.endDate = endDate;
@@ -70,13 +70,13 @@ public class Version {
 
 
     public String getVersion() {
-        return version;
+        return versionName;
     }
 
 
 
-    public void setVersion(String version) {
-        this.version = version;
+    public void setVersion(String versionName) {
+        this.versionName = versionName;
     }
 
 
